@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def uppercase(str):
     for index in range(0, len(str)):
         end_str = ""
