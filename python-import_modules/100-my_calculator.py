@@ -23,5 +23,5 @@ if __name__ == "__main__":
         result = div(a, b)
     else:
         result = mul(a, b)
- 
+
     print("{} {} {} = {}".format(a, operator, b, result))
