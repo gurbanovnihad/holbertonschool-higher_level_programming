@@ -34,8 +34,8 @@ def matrix_divided(matrix, div):
             matrix_check = False
             break
     if not matrix_check:
-        raise TypeError("matrix must be a matrix (list of lists)\
-                of integers/floats")
+        error = "matrix must be a matrix (list of lists) of integers/floats"
+        raise TypeError(error)
 
     # Check if each row has the same size
     size_check = True
