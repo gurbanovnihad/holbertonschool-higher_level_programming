@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+'''
+    Module for dividing matrices to integers
+'''
+
+
 def matrix_divided(matrix, div):
     """
     Divide all elements of a matrix by a number.
@@ -29,8 +34,8 @@ def matrix_divided(matrix, div):
             matrix_check = False
             break
     if not matrix_check:
-        raise TypeError("matrix must be a matrix (list of lists) of "
-                "integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of \
+                integers/floats")
 
     # Check if each row has the same size
     size_check = True
