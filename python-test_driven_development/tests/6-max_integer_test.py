@@ -25,4 +25,4 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, 0, 10, -5]), 10)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(argv=[''], exit=False)
