@@ -5,6 +5,13 @@
 
 
 def say_my_name(first_name, last_name=""):
+    '''
+        This function prints given name and surname
+
+        args:
+            first_name: first name
+            last_name: last name
+    '''
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
