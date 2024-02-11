@@ -18,7 +18,7 @@ class Student:
             for key_dict in self.__dict__:
                 for key_list in attrs:
                     if key_dict == key_list:
-                        new_dict[key_dict] = self.__dict__[key_list]
+                        new_dict[key_dict] = self.__dict__[key_dict]
             return new_dict
         return self.__dict__
 
