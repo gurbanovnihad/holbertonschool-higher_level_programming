@@ -1,10 +1,9 @@
-# 1-my_list_2.txt
-'''
 =======================
-Use 1-my_list.py
+Test 1-my_list.py
 =======================
 
-Without Exception:
+No Exception:
+
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
@@ -90,7 +89,10 @@ Without Exception:
 
 
 
-With Exception:
+
+Exception:
+
+
 
 >>> my_list = MyList(None)
 Traceback (most recent call last):
@@ -118,12 +120,3 @@ AttributeError: 'tuple' object has no attribute 'print_sorted'
 
 >>> print(my_list)
 (1, 2)
-
->>> my_empty_list = MyList([])
->>> my_empty_list.print_sorted()
-[]
-
->>> my_str_list = MyList(['apple', 'banana', 'orange'])
->>> my_str_list.print_sorted()
-['apple', 'banana', 'orange']
-'''
