@@ -5,6 +5,4 @@
 def is_kind_of_class(obj, a_class):
     '''Function doc'''
 
-    if isinstance(obj, a_class):
-        return True
-    return False
+    return issubclass(type(obj), a_class) and type(obj) != a_class
