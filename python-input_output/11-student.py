@@ -29,4 +29,4 @@ class Student:
             if key == "last_name":
                 self.last_name = json[key]
             if key == "age":
-                self.age == json[key]
+                self.age = json[key]
