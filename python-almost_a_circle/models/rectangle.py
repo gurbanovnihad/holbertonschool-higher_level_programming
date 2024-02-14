@@ -52,6 +52,8 @@ class Rectangle(Base):
         self.__y = value
 
     def validator(self ,name, value, zero_value = False):
+        '''This function validates given arguments'''
+
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if not zero_value and  value <= 0:
