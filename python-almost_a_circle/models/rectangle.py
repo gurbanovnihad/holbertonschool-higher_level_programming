@@ -51,14 +51,12 @@ class Rectangle(Base):
         self.validator("y", value, True)
         self.__y = value
 
-    def validator(self ,name, value, zero_value = False):
+    def validator(self, name, value, zero_value=False):
         '''This function validates given arguments'''
 
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
-        if not zero_value and  value <= 0:
+        if not zero_value and value <= 0:
             raise ValueError("{} must be > 0".format(name))
         if zero_value and value < 0:
             raise ValueError("{} must be >= 0".format(name))
-
-
