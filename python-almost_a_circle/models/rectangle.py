@@ -67,7 +67,11 @@ class Rectangle(Base):
 
     def display(self):
         '''Display method displays rectangles by hash character'''
+        for y_ in range(self.y):
+            print()
         for i in range(self.height):
+            for x_ in range(self.x):
+                print(" ", end="")
             for j in range(self.width):
                 print("#", end="")
             print()
