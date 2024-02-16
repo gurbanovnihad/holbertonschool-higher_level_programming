@@ -65,4 +65,3 @@ class Base:
         except Exception:
             pass
         return new_instance
-
