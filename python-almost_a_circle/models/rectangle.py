@@ -101,3 +101,10 @@ class Rectangle(Base):
                         setattr(self, attribute, kwargs[attribute])
                     except Exception:
                         pass
+
+    def to_dictionary(self):
+        return {'x': self.x,
+                'y': self.y,
+                'id': self.id,
+                'height': self.height,
+                'width': self.width}
