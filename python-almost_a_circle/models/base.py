@@ -32,6 +32,7 @@ class Base:
         This method writes the JSON string representation
         of list_objs to a file
         '''
+        list_dict = None
         list_dict = [obj.to_dictionary() for obj in list_objs]\
             if list_objs else []
         filename = "{}.json".format(cls.__name__.lower())
