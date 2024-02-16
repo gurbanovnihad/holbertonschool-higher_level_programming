@@ -47,3 +47,22 @@ class Base:
         filename = "{}.json".format(cls.__name__)
         with open(filename, "w", encoding="utf-8") as f:
             f.write(cls.to_json_string(list_dict))
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''
+        This function returns an instance with all attributes already set
+        '''
+        from models.rectangle import Rectangle
+        from models.square import Square
+
+        if cls is Square:
+            new_instance = Square(5)
+        if cls is Rectangle:
+            new_instance = Rectangle(5, 9)
+        try:
+            new_instance.update(**dictionary)
+        except Exception:
+            pass
+        return new_instance
+
