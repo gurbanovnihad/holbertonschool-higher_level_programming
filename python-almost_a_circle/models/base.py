@@ -71,13 +71,13 @@ class Base:
         '''  This function returns a list of instances '''
         new_list = []
         try:
-            filename = "{}.json".format(cls.__name__)
-            with open(filename, "r", encoding="utf-8") as f:
+            with open("{}.json".format(cls.__name__), "r", encoding="utf-8")\
+                    as f:
                 data = f.read()
                 list_json = cls.from_json_string(data)
                 try:
                     for dict_ in list_json:
-                        new_list.append(cls.create(**dictionary))
+                        new_list.append(cls.create(**dict_))
                 except Exception:
                     pass
             f.close()
