@@ -80,6 +80,7 @@ class Base:
                         new_list.append(cls.create(**dictionary))
                 except Exception:
                     pass
+            f.close()
         except Exception:
             pass
         finally:
