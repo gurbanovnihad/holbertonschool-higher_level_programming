@@ -77,7 +77,7 @@ class Base:
                 list_json = cls.from_json_string(data)
                 try:
                     for dict_ in list_json:
-                        new_list.append(cls.crreate(**dictionary))
+                        new_list.append(cls.create(**dictionary))
                 except Exception:
                     pass
         except Exception:
