@@ -19,6 +19,27 @@ class TestBase(unittest.TestCase):
         '''Cleans up after each test_method.'''
         pass
 
+    def test_id_checker(self):
+        # None
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+
+        b1 = Base(None)
+        self.assertEqual(b1.id, 2)
+
+        # Positive integer
+        b2 = Base(3)
+        self.assertEqual(b2.id, 3)
+
+        # Negative integer
+        b3 = Base(-5)
+        self.assertEqual(b3.id, -5)
+
+        # String
+
+        b4 = Base("String.")
+        self.assertEqual(b4.id, "String.")
+
     def test_A_nb_objects_private(self):
         '''Tests if nb_objects is private class attribute.'''
         self.assertTrue(hasattr(Base, "_Base__nb_objects"))
