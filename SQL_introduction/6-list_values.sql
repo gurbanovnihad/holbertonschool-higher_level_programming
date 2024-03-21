@@ -4,4 +4,4 @@
 -- All fields should be printed
 -- The database name will be passed as an argument of the mysql command
 
-SELECT * from first_table;
+SELECT * FROM hbtn_0c_0.first_table;
