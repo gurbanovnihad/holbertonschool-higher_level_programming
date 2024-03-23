@@ -6,7 +6,7 @@
 -- Results must be sorted in descending order by the rating
 -- You can use only one SELECT statement
 -- The database name will be passed as an argument of the mysql command
-SELECT tv_shows.title, IFNULL(SUM(tv_show_ratings.rate), 0) AS rating_sum
+SELECT tv_shows.title, SUM(tv_show_ratings.rate) AS rating
 FROM tv_shows
 LEFT JOIN tv_show_ratings ON tv_shows.id = tv_show_ratings.show_id
 GROUP BY tv_shows.title
