@@ -24,7 +24,8 @@ if __name__ == "__main__":
             db=argv[3])
 
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name='{}'".format(argv[4]))
+    cursor.execute(
+            "SELECT * FROM states WHERE name='{}' ORDER BY id".format(argv[4]))
 
     records = cursor.fetchall()
     for record in records:
