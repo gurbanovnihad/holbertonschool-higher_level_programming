@@ -3,7 +3,8 @@
 """
 Write a script that lists all cities from the database hbtn_0e_4_usa
 
-Your script should take 3 arguments: mysql username, mysql password and database name
+Your script should take 3 arguments: mysql username, mysql password
+and database name
 You must use the module MySQLdb (import MySQLdb)
 Your script should connect to a MySQL server running on localhost at port 3306
 Results must be sorted in ascending order by cities.id
