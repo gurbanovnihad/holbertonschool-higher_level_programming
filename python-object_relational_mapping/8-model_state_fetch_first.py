@@ -33,8 +33,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    first_state = session.query(State).first()
-    if first_state:
+    state = session.query(State).first()
+    if state:
         print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
