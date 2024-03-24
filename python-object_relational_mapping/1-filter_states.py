@@ -23,7 +23,9 @@ if __name__ == "__main__":
             db=argv[3])
 
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+            )
     records = cursor.fetchall()
 
     for record in records:
